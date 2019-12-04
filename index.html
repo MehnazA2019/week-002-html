@@ -8,17 +8,24 @@
     <body>
             <h1><span style="color:blue"> My To Do List</span></h1>
             <h6>Organisation is the key to success</h6>
-            <!-- remove space between h1 and h6 - how? I tried: 
+            <!-- QS: remove space between h1 and h6 - how? I tried: 
             <h6><span style="display:block">Organisation is the key to success</h6> 
             but did not work, and display:inline, margin: 0 0 0 0 --->
 
             <form action="">
-                New List Name: <input   type="text" 
+                New List Name:  <input  type="text" 
                                         class="new list"
                                         placeholder="insert new list name"
-                                        aria-label="insert new list name" /> <br>
-                <input type="submit" value="Submit"> <br><br>   
-            </form>         
+                                        aria-label="insert new list name" /> 
+                                <button class="btn list"
+                                        aria-label= add new list into screen>+</button>   
+            </form>
+            
+            <div class="toDoList">
+                    <div class="toDoList_header"> 
+                      <h2 class="list_title">List 1</h2>   
+                      <p class="number of tasks">5 tasks incomplete</p>
+                    </div>  
 
 
     </body>
