@@ -1,85 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <title>My To Do List</title>
-    </head>
+  
+  <head>
+    <title>My To Do List</title>
+    <link href="\\wsl$\Ubuntu\home\me_123\stepintotech_course\week-002-html\index.css" rel="stylesheet" type="text/css" />
+  </head>
 
+  
+  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    
+    <h1 class="title">My To Do List</h1>
+    <h6 class="sub-title" style= "margin-top:-80px;">Organisation is the key to success</h6>
 
-    <body>
-            <h1><span style="color:blue"> My To Do List</span></h1>
-            <h6>Organisation is the key to success</h6>
-            
-<!-- QS: remove space between h1 and h6 - how? I tried: 
-    <h6><span style="display:block">Organisation is the key to success</h6> 
-but did not work, and display:inline, margin: 0 0 0 0 --->
+    <div class="all-tasks">
+      <h2 class="task-list-title">My lists</h2>
+      <ul class="task-list">
+        <li class="list-name active-list">List 1</li>
+        <li class="list-name">List 2</li>
+        <li class="list-name">List 3</li>
+      </ul>
 
+      <form action="">
+        <input 
+          type="text"
+          class="new list"
+          placeholder="insert new list name"
+          aria-label="new list name"
+        />
+        <button class="btn create" aria-label="new list name">+</button>
+      </form>
+    </div>
+
+    <div class="todo-list">
+      <div class="todo-header">
+        <h2 class="list-title">List 1</h2>
+        <p class="task-count-one">5 incomplete tasks</p>
+        <p class="task-count-two">    0 complete tasks</p>
+      </div>
+
+      <div class="todo-body">
+        <div class="tasks">
+          <div class="task">
+            <input 
+              type="checkbox"
+              id="task-1"
+            />
+            <label for="task-1">
+              <span class="custom-checkbox"></span>
+              Task 1
+            </label>
+          </div>
+          <!-- /task-1 -->
+
+          <div class="task">
+              <input 
+                type="checkbox"
+                id="task-2"
+              />
+              <label for="task-2">
+                <span class="custom-checkbox"></span>
+                Task 2
+              </label>
+            </div>
+            <!-- /task-2 -->
+
+            <div class="task">
+                <input 
+                  type="checkbox"
+                  id="task-3"
+                />
+                <label for="task-3">
+                  <span class="custom-checkbox"></span>
+                  Task 3
+                </label>
+              </div>
+              <!-- /task-3 -->
+<div class="task">
+                <input 
+                  type="checkbox"
+                  id="task-4"
+                />
+                <label for="task-4">
+                  <span class="custom-checkbox"></span>
+                  Task 4
+                </label>
+              </div>
+              <!-- /task-4 -->
+  <div class="task">
+                <input 
+                  type="checkbox"
+                  id="task-5"
+                />
+                <label for="task-5">
+                  <span class="custom-checkbox"></span>
+                  Task 5
+                </label>
+              </div>
+              <!-- /task-5 -->
+        </div>
+
+        <div class="new-task-creator">
             <form action="">
-                New List Name:  <input  type="text" 
-                                        class="new list"
-                                        placeholder="insert new list name"
-                                        aria-label="insert new list name" /> 
-                                <button class="btn list"
-                                        aria-label= add new list into screen>+</button>   
-            </form>
-            
-            <div class="toDoList">
-                    <div class="toDoList_header"> 
-                      <h2 class="list_title" style="color:pink">List 1</h2>   
-                      <p class="number of tasks">5 incomplete tasks</p>
-                      <p class="number of tasks">0 complete tasks</p>
-                    </div>  
+                <input 
+                  type="text"
+                  class="new task"
+                  placeholder="insert new task name"
+                  aria-label="new task name"
+                />
+                <button class="btn create" aria-label="create new task">+</button>
+              </form>
+        </div>
 
-                        <div class="toDoList_body">
-                            <div class="tasks">
-                                <div class="task">
-                                <input  type="checkbox"
-                                        id="task_1"/>
-                                <label for="task_1">Task 1</label>
-                            </div>
+        <div class="delete-chosen">
+          <button class="btn delete">Delete completed tasks</button>
+          <button class="btn delete">Delete entire list</button>
+        </div>
+      </div>
+    </div>
 
-                            <div class="tasks">
-                                    <div class="task">
-                                    <input  type="checkbox"
-                                            id="task_2"/>
-                                    <label for="task_2">Task 2</label>
-                            </div>
 
-                            <div class="tasks">
-                                    <div class="task">
-                                    <input  type="checkbox"
-                                            id="task_3"/>
-                                    <label for="task_3">Task 3</label>
-                            </div>
-
-                            <div class="tasks">
-                                    <div class="task">
-                                    <input  type="checkbox"
-                                            id="task_4"/>
-                                    <label for="task_4">Task 4</label>
-                            </div>
-
-                            <div class="tasks">
-                                    <div class="task">
-                                    <input  type="checkbox"
-                                            id="task_5"/>
-                                    <label for="task_5">Task 5</label>
-                            </div>
- 
-<!-- Comment: to match my plan, I'm going to copy and paste what I did with the add button to make my task button--->
-                            
-                <div class="add_newTask">
-                        <form action="">
-                                New Task Name:  <input  type="text" 
-                                                        class="new task"
-                                                        placeholder="insert new task name"
-                                                        aria-label="insert new task name" /> 
-                                                <button class="btn list"
-                                                        aria-label= add new task into screen>+</button>   
-                        </form>  
-                </div>          
-                
-                <div class="delete_task"></div>
-                    <button class="delete_button">Delete completed tasks</button>
-                    <button class="delete_button">Delete entire list</button>
-    </body>
+    </div>
+  </body>
 </html>
