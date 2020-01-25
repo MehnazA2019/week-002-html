@@ -7,6 +7,18 @@
   --space: 1rem;
 }
 
+/* FAILED BACKGROUND
+  body{
+    background-image: url("https://drscdn.500px.org/photo/26780689/m%3D2058/adce904daf3def029d87b47292fe0c11");
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    }
+
+*/
+ 
+
+
 .header {
   text-align: center;
   margin-top: 20px;
