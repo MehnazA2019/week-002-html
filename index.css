@@ -1,3 +1,4 @@
+/* default colours and case sensitivity*/
 :root{
   --clr-first: rgb(199, 54, 90);
   --clr-second: #f4f4f4;
@@ -6,7 +7,12 @@
   --space: 1rem;
 }
 
-body {
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
@@ -21,6 +27,18 @@ body {
     auto/1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
 }
 
+.header {
+  text-align: center;
+  margin-top: 20px;
+  font-size: calc(7vw + 2rem);
+  font-weight: 900;
+  font-family:"Lobster", serif;
+  color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  margin: -0.3em 1.5 0.5em;
+}
+
+
 .title {
   grid-area: header;
   text-align: center;
@@ -29,7 +47,8 @@ body {
   font-family:"Lobster", serif;
   color: rgba(0, 0, 0, 0.1);
   letter-spacing: 2px;
-  margin: -0.3em 1.5 0.5em;
+  margin: 30px 0px 80px;
+  /* margin: -0.3em 1.5 0.5em; */
 }
 
 .sub-title {
@@ -40,7 +59,8 @@ body {
   font-family:"";
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
-  margin: -0.3em 1.5 0.5em;
+  margin: 60px;
+  /* margin: -0.3em 1.5 0.5em; */
   
 }
 
@@ -74,13 +94,9 @@ body {
   opacity: 0.8;
 }
 
-form {
+.form {
   display: flex;
 }
-
-
-
-
 
 .btn {
   cursor: pointer;
@@ -190,15 +206,13 @@ form {
 }
 
 .task-count-one {
+  font-color: red;
   margin: 2;
   font-size: 1rem;
   
   
 }
-.task-count-two {
-  margin: 2;
-  font-size: 1rem;
-}
+
 
 .todo-body {
   padding: var(--space);

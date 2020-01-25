@@ -1,58 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <!-- Required meta tags -->
-<meta charset="UTF-8">   
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
   
-  <head>
+<!-- Title of the app -->
     <title>My To Do List</title>
-    <link href="\\wsl$\Ubuntu\home\me_123\stepintotech_course\week-002-html\index.css" rel="stylesheet" type="text/css" />
-  </head>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
 
   
-  <body>
-<!-- Bootstrap start -->
-
-
-<!-- Bootstrap finish -->
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+ 
+ <body>
+   <div class="container">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
     
-    <h1 class="title">My To Do List</h1>
-    <h6 class="sub-title" style= "margin-top:-80px;">Organisation is the key to success</h6>
-
-    <div class="all-tasks">
-      <h2 class="task-list-title">My lists</h2>
-      <ul class="task-list">
-        <li class="list-name active-list">List 1</li>
-        <li class="list-name">List 2</li>
-        <li class="list-name">List 3</li>
-      </ul>
-
-      <form action="">
-        <input 
-          type="text"
-          class="new list"
-          placeholder="insert new list name"
-          aria-label="new list name"
-        />
-        <button class="btn create" aria-label="new list name">+</button>
-      </form>
-    </div>
+   <!-- Header -->
+     <div class="row d-none d-md-block">
+      <div class="col-12 header">
+              
+<h1 class="title">My To Do List</h1>
+<h6 class="sub-title" style= "margin-top:-80px;">Organisation is the key to success</h6>
+       </div>
+     </div>
+          
+      <!-- Add Task Area -->
+     <div class="row">
+            <div class="col-12">
+              
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Add a goal....">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button">  ADD </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+     <!-- Task Count Area -->
 
     <div class="todo-list">
-      <div class="todo-header">
-        <h2 class="list-title">List 1</h2>
-        <p class="task-count-one">5 incomplete tasks</p>
-        <p class="task-count-two">    0 complete tasks</p>
+      <div class="col-12">
+        <div class="todo-header">
+          <h2 class="list-title">Goals to accomplish</h2>
+          <p class="task-count-one">Goals left: 5</p>
+        </div>
       </div>
-
+        
+      <!-- Tasks Area -->
+      
+      <!-- /task-2 -->
       <div class="todo-body">
+      <div class="col-12 col-md-8">
         <div class="tasks">
           <div class="task">
             <input 
@@ -63,8 +65,14 @@
               <span class="custom-checkbox"></span>
               Task 1
             </label>
+                        <div class="col-6 col-md-2">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
           </div>
-          <!-- /task-1 -->
+          
+          
+          
+          <!-- /task-2 -->
 
           <div class="task">
               <input 
@@ -75,8 +83,13 @@
                 <span class="custom-checkbox"></span>
                 Task 2
               </label>
+                        <div class="col-6 col-md-2">
+                <button type="button" class="btn btn-danger">Delete</button>
             </div>
-            <!-- /task-2 -->
+            </div>
+          
+          
+            <!-- /task-3 -->
 
             <div class="task">
                 <input 
@@ -87,8 +100,13 @@
                   <span class="custom-checkbox"></span>
                   Task 3
                 </label>
+                          <div class="col-6 col-md-2">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
               </div>
-              <!-- /task-3 -->
+          
+          
+              <!-- /task-4 -->
 <div class="task">
                 <input 
                   type="checkbox"
@@ -98,8 +116,14 @@
                   <span class="custom-checkbox"></span>
                   Task 4
                 </label>
+              <div class="col-6 col-md-2">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
               </div>
-              <!-- /task-4 -->
+          
+          
+          
+              <!-- /task-5 -->
   <div class="task">
                 <input 
                   type="checkbox"
@@ -109,26 +133,14 @@
                   <span class="custom-checkbox"></span>
                   Task 5
                 </label>
+                <div class="col-6 col-md-2">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
               </div>
-              <!-- /task-5 -->
+         
         </div>
 
-        <div class="new-task-creator">
-            <form action="">
-                <input 
-                  type="text"
-                  class="new task"
-                  placeholder="insert new task name"
-                  aria-label="new task name"
-                />
-                <button class="btn create" aria-label="create new task">+</button>
-              </form>
-        </div>
 
-        <div class="delete-chosen">
-          <button class="btn delete">Delete completed tasks</button>
-          <button class="btn delete">Delete entire list</button>
-        </div>
       </div>
     </div>
 
